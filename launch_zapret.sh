@@ -4,7 +4,7 @@ LISTS="$ZAPRET_DIR/lists"
 BIN="$ZAPRET_DIR/bin"
 cd "$ZAPRET_DIR"
 
-./tpws \
+/Users/h1tpo1nt/Downloads/zapret/zapret-v72.2/binaries/mac64/tpws \
 --filter-tcp=80,443,2053,2083,2087,2096,8443,$GameFilter \
 --filter-udp=443,19294-19344,50000-50100,$GameFilter \
 --filter-tcp=80 --hostlist="$LISTS/list-general.txt" --dpi-desync=fake,split2 --dpi-desync-autottl=2 --dpi-desync-fooling=badseq --dpi-desync-badseq-increment=2 --new \
