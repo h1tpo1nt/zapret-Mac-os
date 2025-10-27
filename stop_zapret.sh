@@ -1,9 +1,10 @@
 #!/bin/bash
 
 if [ -f /tmp/zapret.pid ]; then
-    kill $(cat /tmp/zapret.pid)
+    PID=$(cat /tmp/zapret.pid)
+    kill $PID 2>/dev/null
     rm /tmp/zapret.pid
-    echo "zapret остановлен"
+    echo "zapret остановлен (PID: $PID)"
 else
-    echo "zapret не запущен (файл PID не найден)"
+    echo "zapret не запущен"
 fi
