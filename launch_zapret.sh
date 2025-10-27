@@ -10,4 +10,3 @@ if [ -f /tmp/zapret.pid ]; then
 else
     echo "Ошибка: tpws не запустился"
 fi
-EOF
