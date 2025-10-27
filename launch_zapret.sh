@@ -5,7 +5,7 @@ LISTS="$ZAPRET_DIR/lists"
 
 cd "$ZAPRET_DIR"
 
-# Запуск tpws с обходом DPI для доменов из list-general.txt
+# Запуск tpws с обходом DPI
 ./binaries/mac64/tpws \
 --port=988 \
 --daemon \
@@ -18,4 +18,4 @@ cd "$ZAPRET_DIR"
 --domcase
 
 echo "zapret tpws запущен на порту 988"
-echo "PID сохранён в /tmp/zapret.pid"
+echo "PID: $(cat /tmp/zapret.pid)"
