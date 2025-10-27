@@ -1,10 +1,11 @@
 #!/bin/bash
+
 ZAPRET_DIR="/Users/h1tpo1nt/Downloads/zapret/zapret-v72.2"
 LISTS="$ZAPRET_DIR/lists"
 BIN="$ZAPRET_DIR/bin"
 
-# Задайте GameFilter, если не задана
-GameFilter=${GameFilter:-"2053,2083,2087,2096,8443"}
+# При необходимости задайте GameFilter переменную, например:
+GameFilter="2053,2083,2087,2096,8443"
 
 cd "$ZAPRET_DIR"
 
